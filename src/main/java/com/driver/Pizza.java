@@ -30,7 +30,7 @@ public class Pizza {
         this.isExtraToppingAdded=false;
         this.takeAwayAdded=false;
         this.billGenerated=false;
-        this.bill="Veg pizza base price: "+this.price;
+        this.bill="Veg pizza base price: "+this.price +"/n";
     }
 
     public int getPrice(){

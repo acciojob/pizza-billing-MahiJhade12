@@ -9,10 +9,10 @@ public class Pizza {
     private int toppingsPrice;
     private int cheesePrice;
     private int takeawayPrice;
-    public boolean extraChessAdded=false;
-    public boolean isExtraToppingAdded=false;
-    public  boolean takeAwayAdded=false;
-    public boolean billGenerated=false;
+     boolean extraChessAdded=false;
+    boolean isExtraToppingAdded=false;
+      boolean takeAwayAdded=false;
+     boolean billGenerated=false;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -34,9 +34,6 @@ public class Pizza {
     }
 
     public int getPrice(){
-        
-
-
         return this.price;
     }
 
@@ -52,6 +49,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
        if(isExtraToppingAdded==false){
+
            this.price+=this.toppingsPrice;
            isExtraToppingAdded=true;
        }

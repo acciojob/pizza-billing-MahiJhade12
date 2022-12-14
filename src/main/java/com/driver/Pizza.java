@@ -30,7 +30,7 @@ public class Pizza {
         this.isExtraToppingAdded=false;
         this.takeAwayAdded=false;
         this.billGenerated=false;
-        this.bill="Veg pizza base price: "+this.price +"\n";
+        this.bill="Base Price Of The Pizza: "+this.price +"\n";
     }
 
     public int getPrice(){
@@ -53,7 +53,7 @@ public class Pizza {
         // your code goes here
        if(isExtraToppingAdded==false){
            this.price+=this.toppingsPrice;
-           extraChessAdded=true;
+           isExtraToppingAdded=true;
        }
     }
 

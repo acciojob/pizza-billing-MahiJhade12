@@ -41,7 +41,7 @@ public class Pizza {
         // your code goes here
         if(extraChessAdded==false){
             this.price=this.price+this.cheesePrice;
-            extraChessAdded=true;
+            this.extraChessAdded=true;
         }
         
     }
@@ -51,7 +51,7 @@ public class Pizza {
        if(ExtraToppingAdded==false){
 
            this.price=this.price+this.toppingsPrice;
-           ExtraToppingAdded=true;
+           this.ExtraToppingAdded=true;
        }
     }
 
@@ -59,7 +59,7 @@ public class Pizza {
         // your code goes here
         if(takeAwayAdded==false){
             this.price=this.price+takeawayPrice;
-            takeAwayAdded=true;
+            this.takeAwayAdded=true;
         }
     }
 
@@ -76,7 +76,7 @@ public class Pizza {
               this.bill= this.bill+"Paperbag Added: "+this.takeawayPrice+"\n";
           }
           this.bill=this.bill+"Total Price: "+this.price;
-          billGenerated=true;
+          this.billGenerated=true;
       }
         return this.bill;
     }
